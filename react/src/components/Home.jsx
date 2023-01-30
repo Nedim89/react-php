@@ -11,6 +11,7 @@ const [data, setData] = useState(products);
       {data.map((product)=>{
         return(
             <article key={product.id} style={{border: "1px solid black"}}>
+            <input type="checkbox"></input>
             <p>{product.id}</p>
             <p>{product.name}</p>
             <p>{product.description}</p>

@@ -7,7 +7,8 @@ function App() {
   return (
     <Router>
       <nav>
-      <button><Link to="addproduct"> ADD </Link></button>
+      <Link to="/"> HOME </Link>
+      <Link to="addproduct"> ADD </Link>
       <button>Mass Delete</button>
       </nav>
       
