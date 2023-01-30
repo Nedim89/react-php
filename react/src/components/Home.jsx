@@ -8,7 +8,15 @@ const [data, setData] = useState(products);
   return (
     <div>
       <h1>Home Page</h1>
-      {console.log(data)}
+      {data.map((product)=>{
+        return(
+            <article key={product.id} style={{border: "1px solid black"}}>
+            <p>{product.id}</p>
+            <p>{product.name}</p>
+            <p>{product.description}</p>
+            <p>{product.price}</p>
+        </article>)
+      })}
     </div>
   );
 }
